@@ -14,9 +14,13 @@
       <div class="bl_page404__el1"></div>
       <div class="bl_page404__el2"></div>
       <div class="bl_page404__el3"></div>
-      <router-link class="bl_page404__link" to="/">go home</router-link>
+      <router-link class="bl_page404__link" href="/">go home</router-link>
     </div>
   </main>
+  <h1 class="mt-8">Error Page</h1>
+  <h1 class="mt-8">Error Page</h1>
+
+  <h1 class="mt-8">Error Page</h1>
 </template>
 
 <script>

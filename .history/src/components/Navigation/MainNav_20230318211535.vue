@@ -26,7 +26,7 @@
           </ul>
         </nav>
 
-        <div class="ml-auto md:flex h-full items-center hidden">
+        <div class="ml-auto flex h-full items-center visible md:hidden">
           <!-- <profile-image /> -->
           <action-button v-if="isLoggedIn" @click="loggedIn" text="Sign In" />
           <action-button v-if="!isLoggedIn" @click="loggedIn" text="Sign Out" />

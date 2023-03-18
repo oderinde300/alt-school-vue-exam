@@ -1,22 +1,29 @@
 <template>
-  <main class="bl_page404">
-    <h1>Error 404. The page does not exist</h1>
-    <p>
-      Sorry! The page you are looking for can not be found. Perhaps the page you
-      requested was moved or deleted. It is also possible that you made a small
-      typo when entering the address. Go to the main page.
-    </p>
-    <div class="bl_page404__wrapper">
-      <img
-        src="https://github.com/BlackStar1991/Pictures-for-sharing-/blob/master/404/bigBoom/cloud_warmcasino.png?raw=true"
-        alt="cloud_warmcasino.png"
-      />
-      <div class="bl_page404__el1"></div>
-      <div class="bl_page404__el2"></div>
-      <div class="bl_page404__el3"></div>
-      <router-link class="bl_page404__link" to="/">go home</router-link>
+  <section class="page_404">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="col-sm-10 col-sm-offset-1 text-center">
+            <div class="four_zero_four_bg">
+              <h1 class="text-center">404</h1>
+            </div>
+
+            <div class="contant_box_404">
+              <h3 class="h2">Look like you're lost</h3>
+
+              <p>the page you are looking for not avaible!</p>
+
+              <a href="" class="link_404">Go to Home</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </main>
+  </section>
+  <h1 class="mt-8">Error Page</h1>
+  <h1 class="mt-8">Error Page</h1>
+
+  <h1 class="mt-8">Error Page</h1>
 </template>
 
 <script>

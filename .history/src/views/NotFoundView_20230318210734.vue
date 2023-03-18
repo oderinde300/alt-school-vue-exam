@@ -1,5 +1,5 @@
 <template>
-  <main class="bl_page404">
+  <!-- <main class="bl_page404">
     <h1>Error 404. The page does not exist</h1>
     <p>
       Sorry! The page you are looking for can not be found. Perhaps the page you
@@ -14,9 +14,10 @@
       <div class="bl_page404__el1"></div>
       <div class="bl_page404__el2"></div>
       <div class="bl_page404__el3"></div>
-      <router-link class="bl_page404__link" to="/">go home</router-link>
+      <router-link class="bl_page404__link" href="/">go home</router-link>
     </div>
-  </main>
+  </main> -->
+  <h1 class="mt-8">Error Page</h1>
 </template>
 
 <script>
