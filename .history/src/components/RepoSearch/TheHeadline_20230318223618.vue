@@ -6,9 +6,7 @@
       for everyone
     </h1>
     <router-link to="/repos">
-      <h2 class="text-3xl font-light hover:text-brand-blue-2 hover:font-bold">
-        Checkout My Repos
-      </h2>
+      <h2 class="text-3xl font-light">Checkout My Repos</h2>
     </router-link>
   </section>
 </template>
