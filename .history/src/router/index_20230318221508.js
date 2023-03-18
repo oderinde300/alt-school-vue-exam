@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "@/views/HomeView.vue";
+import RepoDetailsView from "@/views/RepoDetailsView.vue";
 import NotFoundView from "@/views/NotFoundView.vue";
 
 const routes = [
@@ -11,18 +12,16 @@ const routes = [
   {
     path: "/repos",
     name: "Repos",
+    //lazy loading
     component: () => import("../views/RepoResultsView.vue"),
   },
   {
     path: "/repos/:id",
     name: "RepoDetails",
-    component: () => import("../views/RepoDetailsView.vue"),
+    // component: () => import("../views/RepoDetailsView.vue"),
+    component: RepoDetailsView,
   },
-  {
-    path: "/:pathMatch(.*)*",
-    name: "NotFound",
-    component: () => import("../views/NotFoundView.vue"),
-  },
+  { path: "/:pathMatch(.*)*", name: "NotFound", component: NotFoundView },
 ];
 
 const router = createRouter({
