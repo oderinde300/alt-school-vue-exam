@@ -62,11 +62,11 @@ export default {
 
 <style scoped>
 .active {
-  color: #1967d2;
+  color: #42b983;
 }
 
 .exact-active-link {
-  color: #1967d2;
+  color: #42b983;
   font-weight: bold;
 }
 </style>

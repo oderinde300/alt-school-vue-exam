@@ -68,5 +68,6 @@ export default {
 .exact-active-link {
   color: #1967d2;
   font-weight: bold;
+  border: 1px solid #1967d2;
 }
 </style>
