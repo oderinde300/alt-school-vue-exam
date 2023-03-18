@@ -2,10 +2,11 @@
   <div class="mt-8">
     <repo-list :repo="repo" />
   </div>
-
-  <router-link to="/repos">
-    <action-button class="m-8" text="Back" />
-  </router-link>
+  <div class="border border-black">
+    <!-- <router-link to="/repos"> -->
+    <action-button class="mt-8" text="Back" />
+    <!-- </router-link> -->
+  </div>
 </template>
 
 <script>
@@ -17,7 +18,6 @@ export default {
   name: "RepoDetailsView",
   components: {
     RepoList,
-    ActionButton,
   },
   data() {
     return {

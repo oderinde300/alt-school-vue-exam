@@ -1,23 +1,17 @@
 <template>
   <div class="mt-8">
-    <repo-list :repo="repo" />
+    <repo-list :repo="repoToDisplay" />
   </div>
-
-  <router-link to="/repos">
-    <action-button class="m-8" text="Back" />
-  </router-link>
 </template>
 
 <script>
 import axios from "axios";
 import RepoList from "@/components/RepoResults/RepoList.vue";
-import ActionButton from "@/components/Shared/ActionButton.vue";
 
 export default {
   name: "RepoDetailsView",
   components: {
     RepoList,
-    ActionButton,
   },
   data() {
     return {
@@ -29,13 +23,18 @@ export default {
     currentJobId() {
       return this.$route.params.id;
     },
+    repoToDisplay() {
+      return this.repos.find((repo) => repo.id === +this.currentJobId);
+    },
   },
   mounted() {
+    console.log("mounted", this.currentJobId);
     axios
       .get("https://api.github.com/users/oderinde300/repos")
       .then((response) => {
         this.repos = response.data;
-        this.repo = this.repos.find((repo) => repo.id === +this.currentJobId);
+        console.log(this.repos);
+        console.log(this.repoToDisplay);
       })
       .catch((error) => {
         console.error(error);

@@ -4,7 +4,7 @@
   </div>
 
   <router-link to="/repos">
-    <action-button class="m-8" text="Back" />
+    <action-button class="mt-8 py-4" text="Back" />
   </router-link>
 </template>
 
