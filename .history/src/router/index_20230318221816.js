@@ -19,8 +19,10 @@ const routes = [
     component: () => import("../views/RepoDetailsView.vue"),
     children: [
       {
+        // UserProfile will be rendered inside User's <router-view>
+        // when /user/:id/profile is matched
         path: "profile",
-        component: () => import("../components/User/UserProfile.vue"),
+        component: UserProfile,
       },
     ],
   },
