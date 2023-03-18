@@ -1,7 +1,7 @@
 <template>
   <main class="flex h-screen flex-col mt-40">
     <section class="pb-20 pt-10">
-      <div class="lg:grid lg:grid-cols-12 flex flex-col-reverse">
+      <div class="lg:grid lg:grid-cols-12 flex flex-col">
         <div class="col-span-1 col-start-1"></div>
 
         <div class="col-span-5 col-start-2">
